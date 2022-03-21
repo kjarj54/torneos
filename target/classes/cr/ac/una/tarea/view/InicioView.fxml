@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="337.0" prefWidth="600.0" styleClass="jfx-InicioView" stylesheets="@principalview.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.controller.InicioViewController">
+   <children>
+      <HBox alignment="CENTER" layoutX="175.0" layoutY="134.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label prefHeight="80.0" prefWidth="189.0" text="\@Emanuel Vargas G." textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <JFXButton fx:id="btnInicio" onAction="#onActionBtnIcio" prefHeight="71.0" prefWidth="193.0" ripplerFill="#171616" styleClass="jfx-iniciobutton" text="Iniciar" textFill="#fcfcfc" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+            <Label prefHeight="83.0" prefWidth="185.0" text="\@Kevin Arauz J." textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="1.7976931348623157E308" prefHeight="495.0" prefWidth="859.0" stylesheets="@principalview.css" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.controller.RegistroEquipoViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="jfx-panelfondoRegistroEquipo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label styleClass="jfx-titulo-label" text="Registro equipo">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="275.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="265.0" prefWidth="79.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXComboBox prefHeight="25.0" prefWidth="216.0" promptText="Deporte" />
+                              <JFXTextField fx:id="txtNEquipo" promptText="Nombre equipo" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding></VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <JFXButton fx:id="btnBuscarImagenDeporte" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionBtnBuscarImagenDeporte" prefHeight="48.0" prefWidth="137.0" styleClass="jfx-btn-buscar" text="Buscar Imagen">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                                       </graphic></JFXButton>
+                                    <JFXButton fx:id="btnTomarFoto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionBtnTomarFoto" styleClass="jfx-btn-tomarfoto" text="Tomar foto desde camara">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" />
+                                       </graphic></JFXButton>
+                                    <JFXButton fx:id="btnCargarFoto" onAction="#onActionBtnCargarFoto" prefHeight="89.0" prefWidth="93.0" styleClass="jfx-btn-tomarfoto" text="Cargar Foto" />
+                                 </children>
+                              </HBox>
+                              <ImageView fx:id="imgViewEquipo" fitHeight="219.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
+                           </children></VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btnGuardar" onAction="#onActionBtnGuardar" prefHeight="50.0" prefWidth="111.0" styleClass="jfx-btn-guardar" text="Guardar">
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnEditarListaEquipos" onAction="#onActionBtnEditarListaEquipos" styleClass="jfx-btn-buscar" text="Editar lista">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnEliminar" onAction="#onActionBtnEliminar" styleClass="jfx-btn-eliminar" text="Eliminar">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </JFXButton>
+                     </children></HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

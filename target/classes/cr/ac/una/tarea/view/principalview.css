@@ -1,0 +1,265 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+* {
+    -fx-font-family: Roboto;
+    -fx-base-color-focus: #3aa9bf ;
+    -fx-base-color-unfocus: #a8b9bd ;
+    -fx-base-color-etiquetas:#000000 ;
+    -fx-base-color-titulos: #06576a ;
+    -fx-base-color-error: #CF2626 ;
+    -fx-base-color-id:#00C853 ;
+    -fx-background-size: cover;
+}
+
+
+
+
+.jfx-button{
+    -jfx-button-type: RAISED;
+    -fx-opacity: 0.8;
+    -fx-content-display: left;
+    -fx-text-fill: white;
+    -fx-font-veight: bold;
+    -fx-font-size: 14px;
+    -fx-alignment:CENTER_LEFT;
+}
+
+.jfx-button .jfx-rippler{
+    -jfx-rippler-fill: white;
+}
+
+.jfx-button:hover, .button:hover{
+    -fx-background-color: #10D2DE;
+}
+
+.jfx-button:disabled, button:disabled{
+    -fx-background-color: #cccccc;
+    -fx-opacity: 0.4;
+}
+
+
+
+/************************************
+
+
+            Botones
+
+************************************/
+.jfx-iniciobutton{
+    -fx-font-size: 20px;
+    -fx-font-veight: bold;
+    -fx-text-fill: white;
+    -fx-content-display: top;
+    -fx-opacity: 0.87;
+    -fx-alignment: CENTER ;  
+    -fx-background-color: #32043E ;
+}
+
+
+.jfx-btnimg-tbveliminar{
+    -fx-opacity: 0.8;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-color: #f44336;
+    -fx-background-image: url("../resources/Eliminar-48.png");
+    
+}
+
+.jfx-btnimg-agregar, .jfx-btnimg-siguiente{
+    -fx-alignment:CENTER;
+    -fx-content-display:graphic-only;
+    -fx-background-color: #2196F3;
+}
+
+.jfx-btnimg-aplicar, .-jfx-btnimg-buscar{
+    -fx-alignment:CENTER;
+    -fx-content-display:graphic-only;
+    -fx-background-color: #00bcd4;
+}
+.jfx-btn-nuevo{
+    -fx-background-color:#2196F3;
+}
+.jfx-btn-buscar{
+    -fx-background-color:#00bcd4;
+}
+
+.jfx-btn-eliminar{
+    -fx-background-color: #f44336;
+}
+
+.jfx-btn-salir{
+    -fx-background-color: #f44336;
+}
+
+.jfx-btn-guardar,.jfx-btn-generar{
+    -fx-background-color: #00C853;
+}
+
+.jfx-btn-registrarde,.jfx-btn-generar{
+    -fx-background-color: #00C853;
+}
+
+.jfx-btn-registrarequi,.jfx-btn-generar{
+    -fx-background-color: #00C853;
+}
+
+.jfx-btn-creartorneo,.jfx-btn-generar{
+    -fx-background-color: #00C853;
+}
+
+.jfx-btn-tomarfoto,.jfx-btn-generar{
+    -fx-background-color: #EA9C0B;
+}
+
+.jfx-btn-eliminar > ImageView{
+    -fx-image: url(../resources/Eliminar-48.png);
+}
+.jfx-btn-guardar > ImageView{
+    -fx-image: url(../resources/Guardar-48.png);
+}
+
+.jfx-btn-siguiente > ImageView{
+    -fx-image: url(../resources/Siguiente-48.png);
+}
+.jfx-btn-aplicar > ImageView{
+    -fx-image: url(../resources/Aplicar-48.png);
+}
+.jfx-btn-generar > ImageView{
+    -fx-image: url(../resources/Generar-48.png);
+}
+
+.jfx-btn-nuevo > ImageView, .jfx-btnimg-agregar > ImageView{
+    -fx-image: url(../resources/Agregar-48.png);
+}
+.jfx-btn-buscar > ImageView, .jfx-btnimg-buscar > ImageView{
+    -fx-image: url(../resources/Buscar-48.png);
+}
+.jfx-btn-salir > ImageView, .jfx-btnimg-buscar > ImageView{
+    -fx-image: url(../resources/icons8-home-384.png);
+}
+.jfx-btn-registrarde > ImageView, .jfx-btnimg-buscar > ImageView{
+    -fx-image: url(../resources/corriendo.png);
+}
+.jfx-btn-registrarequi > ImageView, .jfx-btnimg-buscar > ImageView{
+    -fx-image: url(../resources/llave-de-la-puerta.png);
+}
+.jfx-btn-creartorneo > ImageView, .jfx-btnimg-buscar > ImageView{
+    -fx-image: url(../resources/copa-de-trofeo-silueta.png);
+}
+
+.jfx-btn-tomarfoto > ImageView, .jfx-btnimg-buscar > ImageView{
+    -fx-image: url(../resources/camara-fotografica.png);
+}
+/************************************
+
+
+            Fondos
+
+************************************/
+
+.jfx-panelFondo{
+   -fx-background-image:url(../resources/fondoDeTorneo.jpeg);
+   -fx-background-position: center center;
+   -fx-background-repeat: no-repeat;
+   -fx-background-attachment: fixed;
+   -fx-background-size: cover;
+   -fx-background-color: #66999;
+
+}
+
+.jfx-InicioView{
+   -fx-background-image:url(../resources/wallpapertip_ball-is-life-wallpaper_70794.jpg);
+   -fx-background-position: center center;
+   -fx-background-repeat: no-repeat;
+   -fx-background-attachment: fixed;
+   -fx-background-size: cover;
+    -fx-background-color: #66999;
+
+}
+
+.jfx-panelfondoPrincipal{
+    -fx-background-color: #07544E;
+}
+
+.jfx-panelfondoSecondview{
+   -fx-background-image:url(../resources/wp4873524.jpg);
+   -fx-background-position: center center;
+   -fx-background-repeat: no-repeat;
+   -fx-background-attachment: fixed;
+   -fx-background-size: cover;
+    -fx-background-color: #66999;
+}
+.jfx-panelfondoRegistroEquipo{
+   -fx-background-image:url(../resources/1759.jpg);
+   -fx-background-position: center center;
+   -fx-background-repeat: no-repeat;
+   -fx-background-attachment: fixed;
+   -fx-background-size: cover;
+    -fx-background-color: #66999;
+}
+.jfx-fondoPartidoView{
+   -fx-background-image:url(../resources/EVF8qMVX0AEKEQs.png);
+   -fx-background-position: center center;
+   -fx-background-repeat: no-repeat;
+   -fx-background-attachment: fixed;
+   -fx-background-size: 100%;
+    -fx-background-color: #66999;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            
+                Etiquetas 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+.jfx-lbl-general{
+    -fx-font-size: 14.0px;
+    -fx-font-fill: -fx-base-color-etiquetas;
+    
+}
+.jfx-titulos-label-fondo{
+    -fx-background-color: #2196F3;
+    -fx-opacity: 0.8;
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: white;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+ 
+}
+.jfx-titulo-label{
+    -fx-font-size: 24.0px;
+    -fx-padding: 5 0 5 0;
+    -fx-text-fill: -fx-base-color-titulos;
+    -fx-font-veigth: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 2, 0.0, 1, 2);
+    
+}
+.jfx-subtitulos-label{
+    -fx-font-size: 14.0px;
+    -fx-text-fill: white;
+    -fx-font-veigth: bold;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            
+                Textfield 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.jfx-text-field{
+    -fx-font-size: 14px;
+    -fx-pref-height: 26px;
+    -fx-min-height: 26px;
+    -fx-max-height: 26px;
+    -fx-aligment: TOP_LEFT;
+    -fx-focus-color: -fx-base-color-focus;
+    -fx-unfocus-color: -fx-base-color-unfocus;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill:white;
+    
+}
+
